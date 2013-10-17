@@ -23,7 +23,7 @@ define('view/SubView', [
 		},
 
 
-		render: function () {
+		render: function() {
 			var view = this;
 
 			view.exampleTemplate = swig.compile(ExampleTemplate);

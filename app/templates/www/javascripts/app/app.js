@@ -15,7 +15,7 @@ define([
 	'model/AppConfig',
 	'router/AppRouter',
 	'view/ExampleView'
-], function (settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppConfig, AppRouter, ExampleView) {
+], function(settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppConfig, AppRouter, ExampleView) {
 
 	'use strict';
 
@@ -35,7 +35,7 @@ define([
 		 * Initialize Application. Responsible for instantiating Backbone router and starting Backbone history.
 		 * @method App.initialize
 		 */
-		initialize: function () {
+		initialize: function() {
 			Analytics.initialize({
 				gaAccountId: App.config.get('gaAccountId'),
 				trackingMap: App.trackingMap
@@ -58,9 +58,9 @@ define([
 		 * Use this function to bind tracking against any custom event triggered against the app.events dispatch.
 		 * @method App.bindCustomEvents
 		 */
-		bindCustomEvents: function () {
+		bindCustomEvents: function() {
 			
-			Events.bind('trackPage', function (pageName) {
+			Events.bind('trackPage', function(pageName) {
 				Analytics.pageTrack(pageName);
 			});
 
@@ -70,7 +70,7 @@ define([
 
 		trackingMap: {
 			click: {
-				'section-main': function (e) {
+				'section-main': function(e) {
 					Analytics.customEventTrack(['param1', 'param2', 'param3']);
 				}
 			}

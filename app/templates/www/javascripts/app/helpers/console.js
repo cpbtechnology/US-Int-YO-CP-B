@@ -19,7 +19,7 @@ define([
 	
 	_.each(methods, function(methodName) {
 		if ( settings.debug === true ) {
-			console[methodName] = function () {
+			console[methodName] = function() {
 				if ( original && methodName in original ) {
 					if ( typeof original[methodName] === 'function' ) {
 						original[methodName].apply(original, arguments);

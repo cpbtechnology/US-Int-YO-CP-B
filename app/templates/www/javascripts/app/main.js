@@ -10,7 +10,7 @@
 	// Polyfill has() when not provided via Requirejs optimizer.
 	var has;
 
-	has = has || function () {
+	has = has || function() {
 		return true;
 	};
 
@@ -76,10 +76,10 @@
 		}
 	}); // end require.config
 
-	require(['app/app'], function (App) {
+	require(['app/app'], function(App) {
 		App.initialize();
 
-		require(['google-analytics','helpers/analytics', 'facebook'], function (ga, Analytics, Facebook) {
+		require(['google-analytics','helpers/analytics', 'facebook'], function(ga, Analytics, Facebook) {
 			
 			FB.init({
 				'appId': App.config.get('fbAccountId'),

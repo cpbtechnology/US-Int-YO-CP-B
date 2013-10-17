@@ -1,7 +1,7 @@
 define('collection/ExampleCollection', [
 	'backbone',
 	'model/ExampleModel'
-], function (Backbone) {
+], function( Backbone ) {
 
 	'use strict';
 

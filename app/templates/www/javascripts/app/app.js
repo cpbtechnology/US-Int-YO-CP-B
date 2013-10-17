@@ -36,6 +36,7 @@ define([
 		 * @method App.initialize
 		 */
 		initialize: function() {
+			
 			Analytics.initialize({
 				gaAccountId: App.config.get('gaAccountId'),
 				trackingMap: App.trackingMap

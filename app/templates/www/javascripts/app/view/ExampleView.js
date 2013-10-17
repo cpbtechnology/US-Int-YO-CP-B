@@ -25,6 +25,7 @@ define('view/ExampleView', [
 
 
 		render: function() {
+
 			var view = this;
 
 			view.subview = new SubView({

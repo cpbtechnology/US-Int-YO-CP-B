@@ -2,7 +2,12 @@
  * @module view/SubView
  */
 
-define(['underscore', 'backbone', 'swig', 'plugins/text!template/ExampleTemplate.html'], function (_, Backbone, swig, ExampleTemplate) {
+define([
+	'lodash',
+	'backbone',
+	'swig',
+	'plugins/text!template/ExampleTemplate.html'
+], function(_, Backbone, swig, ExampleTemplate) {
 
 	'use strict';
 
@@ -10,10 +15,10 @@ define(['underscore', 'backbone', 'swig', 'plugins/text!template/ExampleTemplate
 
 		"events": {},
 
-		"initialize": function (options) {
+		"initialize": function( options ) {
 			var view = this;
 
-			_.bindAll(this);
+			_.bindAll( this );
 
 			view.render();
 

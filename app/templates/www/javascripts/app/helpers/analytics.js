@@ -2,7 +2,10 @@
  * @module helpers/analytics
  */
 
-define(['jquery', 'underscore'], function (require) {
+define([
+	'jquery',
+	'lodash'
+], function (require) {
 
 	'use strict';
 

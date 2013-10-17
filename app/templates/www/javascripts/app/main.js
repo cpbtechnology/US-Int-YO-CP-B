@@ -2,7 +2,7 @@
  * @module main
  */
 // TODO: refactor to use double quotes for valid JSON
-+function () {
+function() {
 
 	'use strict';
 

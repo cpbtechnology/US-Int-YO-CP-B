@@ -2,20 +2,20 @@
  * @module app
  */
 
-define(['settings',
-		'jquery',
-		'underscore',
-		'modernizr',
-		'backbone',
-		'swig',
-		'helpers/console',
-		'helpers/events',
-		'helpers/analytics',
-		'model/AppConfig',
-		'router/AppRouter',
-		'view/ExampleView'
-	], // end dependencies
-	function (settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppConfig, AppRouter, ExampleView) {
+define([
+	'settings',
+	'jquery',
+	'lodash',
+	'modernizr',
+	'backbone',
+	'swig',
+	'helpers/console',
+	'helpers/events',
+	'helpers/analytics',
+	'model/AppConfig',
+	'router/AppRouter',
+	'view/ExampleView'
+], function (settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppConfig, AppRouter, ExampleView) {
 
 	'use strict';
 

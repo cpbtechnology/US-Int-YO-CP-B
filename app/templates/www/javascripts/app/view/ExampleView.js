@@ -2,7 +2,12 @@
  * @module view/ExampleView
  */
 
-define(['jquery','underscore','backbone','view/SubView'], function ($, _, Backbone, SubView) {
+define([
+	'jquery',
+	'lodash',
+	'backbone',
+	'view/SubView'
+], function ($, _, Backbone, SubView) {
 
 	'use strict';
 

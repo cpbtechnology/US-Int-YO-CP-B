@@ -109,13 +109,11 @@ CpbGenerator.prototype.app = function app() {
   this.copy('www/javascripts/lib/lodash.min.js', 'www/javascripts/lib/lodash.min.js');
   this.copy('www/javascripts/lib/modernizr-2.6.2.min.js', 'www/javascripts/lib/modernizr-2.6.2.min.js');
   this.copy('www/javascripts/lib/swig.min.js', 'www/javascripts/lib/swig.min.js');
-  this.copy('www/javascripts/lib/underscore.js', 'www/javascripts/lib/underscore.js');
   this.copy('www/javascripts/lib/backbone.js', 'www/javascripts/lib/backbone.js');
   this.copy('www/javascripts/lib/enquire.min.js', 'www/javascripts/lib/enquire.min.js');
   this.copy('www/javascripts/lib/jquery-1.9.1.min.js', 'www/javascripts/lib/jquery-1.9.1.min.js');
   this.copy('www/javascripts/lib/modernizr-2.6.2.js', 'www/javascripts/lib/modernizr-2.6.2.js');
   this.copy('www/javascripts/lib/require.js', 'www/javascripts/lib/require.js');
-  this.copy('www/javascripts/lib/underscore-min.js', 'www/javascripts/lib/underscore-min.js');
   this.copy('www/javascripts/plugins/text.js', 'www/javascripts/plugins/text.js');
   this.copy('www/stylesheets/stylus/app/main.styl', 'www/stylesheets/stylus/app/main.styl');
   this.copy('www/stylesheets/stylus/app/mobile.styl', 'www/stylesheets/stylus/app/mobile.styl');

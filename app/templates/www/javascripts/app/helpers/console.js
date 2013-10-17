@@ -2,7 +2,10 @@
  * @module helpers/console
  */
 
-define(['settings','underscore'], function (settings, _) {
+define([
+	'settings',
+	'lodash'
+], function (settings, _) {
 
 	'use strict';
 

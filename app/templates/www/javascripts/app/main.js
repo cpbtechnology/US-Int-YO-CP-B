@@ -30,7 +30,7 @@
 			// Core Libraries
 			"modernizr": "lib/modernizr-2.6.2.min", //http://modernizr.com/docs
 			"jquery": "lib/jquery-1.9.1.min",		//http://api.jquery.com/
-			"underscore": "lib/lodash.min",			//http://lodash.com/
+			"lodash": "lib/lodash.min",			//http://lodash.com/
 			"backbone": "lib/backbone-min",			//http://backbonejs.org/
 			"swig": "lib/swig.min",					//http://paularmstrong.github.com/swig/docs/
 			
@@ -56,17 +56,17 @@
 				"exports": "Modernizr"
 			},
 
-			"underscore": {
+			"lodash": {
 				"exports": "_"
 			},
 
 			"backbone": {
-				"deps": ["underscore", "jquery"],
+				"deps": ["lodash", "jquery"],
 				"exports": "Backbone"
 			},
 
 			"swig": {
-				"deps": ["underscore"],
+				"deps": ["lodash"],
 				"exports": "swig"
 			},
 

@@ -7,6 +7,7 @@ define('router/AppRouter', [
 	return Backbone.Router.extend({
 
 		initialize: function() {
+			
 			console.log('Backbone : Global : AppRouter : Initialized');
 		},
 

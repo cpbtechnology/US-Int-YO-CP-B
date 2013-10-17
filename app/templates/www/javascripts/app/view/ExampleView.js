@@ -14,6 +14,7 @@ define('view/ExampleView', [
 		el: '#main',
 
 		initialize: function(options) {
+
 			var view = this;
 
 			_.bindAll(this);

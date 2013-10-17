@@ -10,6 +10,7 @@ define('model/AppConfig', [
 		defaults: {},
 
 		initialize: function(options) {
+
 			_.extend(this.defaults, options);
 		},
 

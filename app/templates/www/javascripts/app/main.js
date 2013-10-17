@@ -45,7 +45,7 @@
 
 			// 3rd party
 			facebook: '//connect.facebook.net/en_US/all',
-			google-analytics: '//google-analytics.com/ga'
+			'google-analytics': '//google-analytics.com/ga'
 		},
 
 		// Sets the configuration for your third party scripts that are not AMD compatible

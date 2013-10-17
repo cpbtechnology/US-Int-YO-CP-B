@@ -1,8 +1,4 @@
-/**
- * @module view/SubView
- */
-
-define([
+define('view/SubView', [
 	'lodash',
 	'backbone',
 	'swig',
@@ -13,9 +9,10 @@ define([
 
 	return Backbone.View.extend({
 
-		"events": {},
+		events: {},
 
-		"initialize": function( options ) {
+		initialize: function( options ) {
+
 			var view = this;
 
 			_.bindAll( this );
@@ -25,12 +22,13 @@ define([
 			console.log('Backbone : Global : SubView : Initialized');
 		},
 
-		"render": function () {
+
+		render: function () {
 			var view = this;
 
 			view.exampleTemplate = swig.compile(ExampleTemplate);
 			view.$el.append(view.exampleTemplate({
-				"url": "https://github.com/cpbtechnology/US-boilerplate-backbonejs"
+				url: 'https://github.com/cpbtechnology/US-boilerplate-backbonejs'
 			}));
 		}
 

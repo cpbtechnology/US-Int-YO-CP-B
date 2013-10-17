@@ -1,16 +1,14 @@
-/**
- * @module model/ExampleModel
- */
-
-define(['backbone'], function (Backbone) {
+define('model/ExampleModel', [
+	'backbone'
+], function( Backbone ) {
 
 	'use strict';
 
 	return Backbone.Model.extend({
 
-		"defaults": {},
+		defaults: {},
 
-		"initialize": function () {}
+		initialize: function() {}
 
 	});
 

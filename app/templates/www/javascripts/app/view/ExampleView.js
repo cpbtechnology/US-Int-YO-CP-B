@@ -1,23 +1,19 @@
-/**
- * @module view/ExampleView
- */
-
-define([
+define('view/ExampleView', [
 	'jquery',
 	'lodash',
 	'backbone',
 	'view/SubView'
-], function ($, _, Backbone, SubView) {
+], function($, _, Backbone, SubView) {
 
 	'use strict';
 
 	return Backbone.View.extend({
 
-		"events": {},
+		events: {},
 
-		"el": "#main",
+		el: '#main',
 
-		"initialize": function (options) {
+		initialize: function(options) {
 			var view = this;
 
 			_.bindAll(this);
@@ -27,12 +23,15 @@ define([
 			console.log('Backbone : Global : ExampleView : Initialized');
 		},
 
-		"render": function () {
+
+		render: function() {
 			var view = this;
 
 			view.subview = new SubView({
-				"el": "#content"
+				el: '#content'
 			});
 		}
+
 	});
+
 });

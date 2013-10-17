@@ -31,6 +31,7 @@ define([
 			return this;
 		},
 
+
 		/**
 		 * Fires a pageview to the page specified.
 		 * @method Analytics.pageTrack
@@ -45,6 +46,7 @@ define([
 			return this;
 		},
 
+
 		/**
 		 * Fires a custom GA event.
 		 * @method Analytics.customEventTrack
@@ -55,6 +57,7 @@ define([
 			window._gaq.push(['_trackEvent', args[0], args[1], args[2]]);
 			return this;
 		},
+
 
 		/**
 		 * Tracks Likes/Unlikes via the FB API's events.
@@ -78,6 +81,7 @@ define([
 
 			return this;
 		},
+
 
 		/**
 		 * Tracks Tweets via the twitter API.
@@ -125,6 +129,7 @@ define([
 
 			return this;
 		},
+
 
 		/**
 		 * Creates a delegated event listener on the <body>;

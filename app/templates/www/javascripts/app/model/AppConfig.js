@@ -1,29 +1,25 @@
-/**
- * @module model/AppConfig
- */
-
-define([
+define('model/AppConfig', [
 	'lodash',
 	'backbone'
-], function (_, Backbone) {
+], function( _, Backbone ) {
 
 	'use strict';
 
 	return Backbone.Model.extend({
 
-		"defaults": {},
+		defaults: {},
 
-		"initialize": function (options) {
+		initialize: function(options) {
 			_.extend(this.defaults, options);
 		},
 
-		"propertyAsBool": function (prop) {
+		propertyAsBool: function(prop) {
 
-			if (!this.get(prop)) {
+			if( !this.get(prop) ) {
 				return;
 			}
 
-			switch (this.get(prop).toString().toLowerCase()) {
+			switch ( this.get(prop).toString().toLowerCase() ) {
 			case 'true':
 			case 'yes':
 			case '1':
@@ -34,6 +30,9 @@ define([
 			case null:
 				return false;
 			}
+	
 		}
+	
 	});
+
 });

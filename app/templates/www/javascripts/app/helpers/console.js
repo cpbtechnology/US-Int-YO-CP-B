@@ -1,8 +1,4 @@
-/**
- * @module helpers/console
- */
-
-define([
+define('helpers/console', [
 	'settings',
 	'lodash'
 ], function( settings, _ ) {
@@ -18,10 +14,10 @@ define([
 		methods = ['assert', 'count', 'debug', 'dir', 'dirxml', 'error', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'trace', 'warn'];
 	
 	_.each(methods, function(methodName) {
-		if ( settings.debug === true ) {
+		if( settings.debug === true ) {
 			console[methodName] = function() {
-				if ( original && methodName in original ) {
-					if ( typeof original[methodName] === 'function' ) {
+				if( original && methodName in original ) {
+					if( typeof original[methodName] === 'function' ) {
 						original[methodName].apply(original, arguments);
 					} else {
 						// IE<10 does not extend native Object and Function types

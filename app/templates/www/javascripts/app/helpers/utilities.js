@@ -1,7 +1,7 @@
 define( 'helpers/utilities', [
 	'jquery',
 	'helpers/events'
-], function( $, Events ){
+], function( $, Events ) {
 
 	'use strict';
 
@@ -12,7 +12,7 @@ define( 'helpers/utilities', [
 		 * Test to see if device is an iPad.
 		 * @method Utilities.isIpad
 		 */
-		isIpad: function(){
+		isIpad: function() {
 			return (navigator.userAgent.match(/iPad/i) === null) ? false : true;
 		},
 

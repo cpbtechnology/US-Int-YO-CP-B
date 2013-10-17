@@ -29,7 +29,7 @@ module.exports = function(config) {
   dirs.forEach( function(dir) {
     var files;
 
-    if( ffs.statSync(config.stylesheets+'/stylus/'+dir).isDirectory() ) {
+    if( fs.statSync(config.stylesheets+'/stylus/'+dir).isDirectory() ) {
       files = fs.readdirSync(config.stylesheets+'/stylus/'+dir);
       stylus.prod.files[config.cssbin+'/'+dir+'.css'] = [];
 

@@ -52,7 +52,7 @@ define([
 		 * @method Analytics.customEventTrack
 		 * @param args {Array} Array of arguments for custom GA Event
 		 */
-		customEventTrack: function(args){
+		customEventTrack: function(args) {
 			
 			window._gaq.push(['_trackEvent', args[0], args[1], args[2]]);
 			return this;
@@ -63,7 +63,7 @@ define([
 		 * Tracks Likes/Unlikes via the FB API's events.
 		 * @method Analytics.socialTrackFacebook
 		 */
-		socialTrackFacebook: function(){
+		socialTrackFacebook: function() {
 			
 			FB.Event.subscribe('edge.create', function(targetUrl) {
 				if (_gaq === 'undefined') {
@@ -91,7 +91,10 @@ define([
 			
 			function extractParamFromUri( uri, paramName ) {
 
-				var query, parts, params, i;
+				var query,
+					parts,
+					params,
+					i;
 
 				if( !uri ) {
 					return;
@@ -118,9 +121,9 @@ define([
 			}
 
 			window.twttr.events.bind('tweet', function( event ) {
-				if (event) {
+				if( event ) {
 					var targetUrl;
-					if (event.target && event.target.nodeName === 'IFRAME') {
+					if( event.target && event.target.nodeName === 'IFRAME' ) {
 						targetUrl = extractParamFromUri(event.target.src, 'url');
 					}
 					window._gaq.push(['_trackSocial', 'twitter', 'tweet', targetUrl]);
@@ -145,24 +148,25 @@ define([
 			var events = [],
 				event;
 
-			for ( event in map ) {
-				if ( map.hasOwnProperty(event) ) {
+			for( event in map ) {
+				if( map.hasOwnProperty(event) ) {
 					events.push(event);
 				}
 			}
 
-			$('body').on(events.join(' ').toString(), 'div, object, span, p, a, form, input, li, img', function (e, altID) {
+			$('body').on(events.join(' ').toString(), 'div, object, span, p, a, form, input, li, img', function(e, altID) {
 				var event = ( e.namespace ) ? e.type + '.' + e.namespace : e.type,
 					link = e.currentTarget,
 					selector = altID || link.getAttribute('data-track') || link.id,
 					trackElem, trackFn;
 
-				if (map === undefined || map[event] === undefined || map[event][selector] === undefined) {
+				if( map === undefined || map[event] === undefined || map[event][selector] === undefined ) {
 					return;
 				} else {
 					map[event][selector].apply(window, [e]);
 				}
 			});
+
 			return this;
 		}
 	};

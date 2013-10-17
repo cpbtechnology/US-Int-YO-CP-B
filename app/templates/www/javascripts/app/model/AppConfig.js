@@ -1,7 +1,7 @@
 define('model/AppConfig', [
 	'lodash',
 	'backbone'
-], function( _, Backbone ) {
+], function(_, Backbone) {
 
 	'use strict';
 

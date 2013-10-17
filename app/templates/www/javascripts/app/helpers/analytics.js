@@ -5,7 +5,7 @@
 define([
 	'jquery',
 	'lodash'
-], function ( require ) {
+], function(require) {
 
 	'use strict';
 

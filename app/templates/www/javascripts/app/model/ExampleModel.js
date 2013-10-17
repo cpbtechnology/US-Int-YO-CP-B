@@ -1,6 +1,6 @@
 define('model/ExampleModel', [
 	'backbone'
-], function( Backbone ) {
+], function(Backbone) {
 
 	'use strict';
 

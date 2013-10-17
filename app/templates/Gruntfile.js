@@ -19,27 +19,23 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-    'beautifier': {
-      'options': {
-        'indentSize': 1,
-        'indentChar': '\t',
-        'spaceAfterAnonFunction': true
+    beautifier: {
+      options: {
+        indentSize: 1,
+        indentChar: '\t',
+        spaceAfterAnonFunction: true
       }
     },
 
-    'beautify': {
-      'files': [ config.javascripts + '/app/**/*.js' ]
+    beautify: {
+      files: [ config.javascripts + '/app/**/*.js' ]
     },
 
-    'stylus': require('./build/config/stylus.js')(config),
-
-    'qunit': require('./build/config/qunit.js')(config),
-
-    'requirejs': require('./build/config/requirejs.js')(config),
-
-    'jshint': require('./build/config/jshint.js')(config),
-
-    'watch': require('./build/config/watch.js')(config)
+    stylus:    require('./build/config/stylus.js')(config),
+    qunit:     require('./build/config/qunit.js')(config),
+    requirejs: require('./build/config/requirejs.js')(config),
+    jshint:    require('./build/config/jshint.js')(config),
+    watch:     require('./build/config/watch.js')(config)
 
   });
 
@@ -60,8 +56,4 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
 
-
 };
-
-
-

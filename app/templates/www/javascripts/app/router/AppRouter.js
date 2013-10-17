@@ -1,21 +1,24 @@
-/**
- * @module router/AppRouter
- */
-
-define(['backbone'], function (Backbone) {
+define('router/AppRouter', [
+	'backbone'
+], function(Backbone) {
 
 	'use strict';
 
 	return Backbone.Router.extend({
 
-		"initialize": function () {
+		initialize: function() {
+			
 			console.log('Backbone : Global : AppRouter : Initialized');
 		},
 
-		"routes": {
-			"": "index"
+
+		routes: {
+			'': 'index'
 		},
 
-		"index": function () {}
+
+		index: function() {}
+
 	});
+
 });

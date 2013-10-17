@@ -2,7 +2,10 @@
  * @module model/AppConfig
  */
 
-define(['underscore', 'backbone'], function (_, Backbone) {
+define([
+	'lodash',
+	'backbone'
+], function (_, Backbone) {
 
 	'use strict';
 

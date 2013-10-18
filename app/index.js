@@ -92,9 +92,9 @@ CpbGenerator.prototype.app = function app() {
   this.copy('www/js/helpers/utilities.js', 'www/js/helpers/utilities.js');
   this.copy('www/js/app/router.js', 'www/js/app/router.js');
   this.copy('www/js/app/master/app.js', 'www/js/app/master/app.js');
-  this.copy('www/js/app/master/template/ExampleTemplate.html', 'www/js/app/master/template/ExampleTemplate.html');
-  this.copy('www/js/app/master/view/ExampleView.js', 'www/js/app/master/view/ExampleView.js');
-  this.copy('www/js/app/master/view/SubView.js', 'www/js/app/master/view/SubView.js');
+  this.copy('www/js/app/master/template/Example.html', 'www/js/app/master/template/Example.html');
+  this.copy('www/js/app/master/view/example.js', 'www/js/app/master/view/example.js');
+  this.copy('www/js/app/master/view/subExample.js', 'www/js/app/master/view/subExample.js');
   this.copy('www/js/lib/backbone-min.js', 'www/js/lib/backbone-min.js');
   this.copy('www/js/lib/lodash.min.js', 'www/js/lib/lodash.min.js');
   this.copy('www/js/lib/modernizr-2.6.2.min.js', 'www/js/lib/modernizr-2.6.2.min.js');

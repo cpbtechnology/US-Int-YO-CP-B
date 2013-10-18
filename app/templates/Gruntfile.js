@@ -3,7 +3,6 @@
  * @class Build.Config
  * @static
  */
-
 module.exports = function(grunt) {
 
   var config = {};
@@ -31,8 +30,7 @@ module.exports = function(grunt) {
       files: [ config.javascripts + '/app/**/*.js' ]
     },
 
-    stylus:    require('./build/config/stylus.js')(config),
-    qunit:     require('./build/config/qunit.js')(config),
+    compass:   require('./build/config/compass.js')(config),
     requirejs: require('./build/config/requirejs.js')(config),
     jshint:    require('./build/config/jshint.js')(config),
     watch:     require('./build/config/watch.js')(config)
@@ -40,9 +38,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', ['stylus:prod', 'requirejs']);
-  grunt.registerTask('css', ['stylus:dev']);
-  grunt.registerTask('cssmin', ['stylus:prod']);
+  grunt.registerTask('default', ['compass', 'requirejs', 'jshint']);
   grunt.registerTask('pretty-js', 'beautify');
 
   // load local tasks.
@@ -50,10 +46,9 @@ module.exports = function(grunt) {
 
   // load grunt plugins
   grunt.loadNpmTasks('grunt-beautify');
-  grunt.loadNpmTasks('grunt-contrib-stylus');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
 
 };

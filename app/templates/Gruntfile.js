@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     watch:     require('./build/config/watch.js')(config),
     imagemin:  require('./build/config/imagemin.js')(config),
     compass:   require('./build/config/compass.js')(config),
-    cssmin:    require('./build/config/cssmin.js')(config),
+    //cssmin:    require('./build/config/cssmin.js')(config),
     jshint:    require('./build/config/jshint.js')(config),
     requirejs: require('./build/config/requirejs.js')(config)
 

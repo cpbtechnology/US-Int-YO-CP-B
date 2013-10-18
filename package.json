@@ -1,12 +1,11 @@
 {
   "name": "generator-cpb",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A Boilerplate Generator for Yeoman",
   "keywords": [
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/ratherironic/generator-cpb",
-  "bugs": "https://github.com/ratherironic/generator-cpb/issues",
+  "homepage": "https://github.com/cpbtechnology/US-Int-YO-CP-B",
   "author": {
     "name": "Matt Gordon",
     "email": "ratherironic@gmail.com",
@@ -15,7 +14,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ratherironic/generator-cpb.git"
+    "url": "git://github.com/ratherironic/US-Int-YO-CP-B"
   },
   "scripts": {
     "test": "mocha"

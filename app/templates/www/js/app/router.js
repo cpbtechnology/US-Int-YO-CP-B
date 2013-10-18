@@ -1,4 +1,4 @@
-define('router/AppRouter', [
+define('router', [
 	'backbone'
 ], function(Backbone) {
 

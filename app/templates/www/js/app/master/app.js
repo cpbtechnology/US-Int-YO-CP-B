@@ -1,8 +1,4 @@
-/**
- * @module app
- */
-
-define([
+define('master/app', [
 	'settings',
 	'jquery',
 	'lodash',

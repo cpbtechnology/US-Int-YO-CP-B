@@ -1,16 +1,16 @@
 /**
  * @module Build
  * @submodule Build.Config
- * @class Build.Config.JSLint
+ * @class Build.Config.JSHint
  * @static
  */
 module.exports = function(config) {
 
   return {
 
-    files: [ config.javascripts + '/app/**/*.js'],
+    files: [config.javascripts +'/app/**/*.js'],
 
-    exclude: ['**/ignore-*.js'],
+    exclude: [config.javascripts +'/lib/*.js'],
 
     options: {
       node: true,
@@ -30,4 +30,4 @@ module.exports = function(config) {
 
   };
 
-}
+};

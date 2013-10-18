@@ -80,10 +80,12 @@ CpbGenerator.prototype.app = function app() {
 
   // copy over styles and JS
   this.copy('Gruntfile.js', 'Gruntfile.js');
+  this.copy('build/config/clean.js', 'build/config/clean.js');
+  this.copy('build/config/compass.js', 'build/config/compass.js');
+  this.copy('build/config/imagemin.js', 'build/config/imagemin.js');
   this.copy('build/config/jshint.js', 'build/config/jshint.js');
   this.copy('build/config/requirejs.js', 'build/config/requirejs.js');
   this.copy('build/config/watch.js', 'build/config/watch.js');
-  this.copy('build/config/yuidoc.js', 'build/config/yuidoc.js');
   this.copy('www/robots.txt', 'www/robots.txt');
   this.copy('www/js/app/main.js', 'www/js/app/main.js');
   this.copy('www/js/helpers/analytics.js', 'www/js/helpers/analytics.js');

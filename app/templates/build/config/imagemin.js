@@ -8,12 +8,11 @@ module.exports = function(config) {
 
   return {
 
-      build: {
-        files: {
-          cwd: 'images/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'images/'
-        }
+    build: {
+      files: {
+        cwd: 'images/',
+        src: ['**/*.{png,jpg,gif}'],
+        dest: 'images/'
       }
     }
 

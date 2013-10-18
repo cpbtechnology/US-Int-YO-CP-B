@@ -1,8 +1,8 @@
-define('view/ExampleView', [
+define('master/view/example', [
 	'jquery',
 	'lodash',
 	'backbone',
-	'view/SubView'
+	'master/view/subExample'
 ], function($, _, Backbone, SubView) {
 
 	'use strict';

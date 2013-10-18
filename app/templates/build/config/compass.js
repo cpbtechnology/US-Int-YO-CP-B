@@ -10,11 +10,11 @@ module.exports = function(config) {
     dist: {
       options: {
         relativeAssets: true,
-        sassDir: config.stylesheets + '/sass',
+        sassDir: config.stylesheets +'/app',
         cssDir: config.cssbin,
         outputStyle: 'compressed'
       }
     }
   };
 
-}
+};

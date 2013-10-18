@@ -80,10 +80,12 @@ CpbGenerator.prototype.app = function app() {
 
   // copy over styles and JS
   this.copy('Gruntfile.js', 'Gruntfile.js');
+  this.copy('build/config/clean.js', 'build/config/clean.js');
+  this.copy('build/config/compass.js', 'build/config/compass.js');
+  this.copy('build/config/imagemin.js', 'build/config/imagemin.js');
   this.copy('build/config/jshint.js', 'build/config/jshint.js');
   this.copy('build/config/requirejs.js', 'build/config/requirejs.js');
   this.copy('build/config/watch.js', 'build/config/watch.js');
-  this.copy('build/config/yuidoc.js', 'build/config/yuidoc.js');
   this.copy('www/robots.txt', 'www/robots.txt');
   this.copy('www/js/app/main.js', 'www/js/app/main.js');
   this.copy('www/js/helpers/analytics.js', 'www/js/helpers/analytics.js');
@@ -92,9 +94,9 @@ CpbGenerator.prototype.app = function app() {
   this.copy('www/js/helpers/utilities.js', 'www/js/helpers/utilities.js');
   this.copy('www/js/app/router.js', 'www/js/app/router.js');
   this.copy('www/js/app/master/app.js', 'www/js/app/master/app.js');
-  this.copy('www/js/app/master/template/ExampleTemplate.html', 'www/js/app/master/template/ExampleTemplate.html');
-  this.copy('www/js/app/master/view/ExampleView.js', 'www/js/app/master/view/ExampleView.js');
-  this.copy('www/js/app/master/view/SubView.js', 'www/js/app/master/view/SubView.js');
+  this.copy('www/js/app/master/template/Example.html', 'www/js/app/master/template/Example.html');
+  this.copy('www/js/app/master/view/example.js', 'www/js/app/master/view/example.js');
+  this.copy('www/js/app/master/view/subExample.js', 'www/js/app/master/view/subExample.js');
   this.copy('www/js/lib/backbone-min.js', 'www/js/lib/backbone-min.js');
   this.copy('www/js/lib/lodash.min.js', 'www/js/lib/lodash.min.js');
   this.copy('www/js/lib/modernizr-2.6.2.min.js', 'www/js/lib/modernizr-2.6.2.min.js');

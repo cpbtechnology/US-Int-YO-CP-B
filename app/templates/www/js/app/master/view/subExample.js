@@ -1,8 +1,8 @@
-define('view/SubView', [
+define('master/view/subExample', [
 	'lodash',
 	'backbone',
 	'swig',
-	'plugins/text!template/ExampleTemplate.html'
+	'plugins/text!template/Example.html'
 ], function(_, Backbone, swig, ExampleTemplate) {
 
 	'use strict';

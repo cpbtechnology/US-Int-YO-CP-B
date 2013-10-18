@@ -1,7 +1,14 @@
-# generator-cpb  [![Build Status](https://secure.travis-ci.org/ratherironic/generator-cpb.png?branch=master)](https://travis-ci.org/ratherironic/generator-cpb)
+# generator-cpb
 
-A generator for [Yeoman](http://yeoman.io).
+A CP+B Boilerplate generator for [Yeoman](http://yeoman.io).
 
+## Steps for Updating (until this becomes automated)
+1.  Edit your favorite Files
+2.  Did you add a new file or remove some? If yes, Edit: App/index.js
+3.  Update /package.json to increase version number
+4.  Commit + Push
+5.  `npm publish` to update npm
+6.  run: `npm update -g generator-cpb`
 
 ## Getting Started
 

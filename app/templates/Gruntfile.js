@@ -19,13 +19,13 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-    clean:     require('./build/config/clean.js')(config)
-    watch:     require('./build/config/watch.js')(config)
-    imagemin:  require('./build/config/imagemin.js')(config)
+    clean:     require('./build/config/clean.js')(config),
+    watch:     require('./build/config/watch.js')(config),
+    imagemin:  require('./build/config/imagemin.js')(config),
     compass:   require('./build/config/compass.js')(config),
     cssmin:    require('./build/config/cssmin.js')(config),
     jshint:    require('./build/config/jshint.js')(config),
-    requirejs: require('./build/config/requirejs.js')(config),
+    requirejs: require('./build/config/requirejs.js')(config)
 
   });
 

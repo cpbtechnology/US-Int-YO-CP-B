@@ -67,7 +67,7 @@ strong {
 
 code {
   font-size: $font-size-6;
-  line-height: get-multiplier(24, $font-size-6); // 24/14
+  line-height: get-multiplier(24, $font-size-base); // 24/14
 }
 
 

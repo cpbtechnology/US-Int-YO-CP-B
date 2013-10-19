@@ -8,13 +8,12 @@ module.exports = function(config) {
 
   return {
 
-    build: {
-      files: {
-        expand: true,
-        cwd: 'images/',
-        src: ['**/*.{png,jpg,gif}'],
-        dest: 'images/'
-      }
+    minify: {
+      expand: true,
+      cwd: config.cssbin,
+      src: ['**/*.css'],
+      dest: config.cssmin,
+      ext: '.min.css'
     }
 
   };

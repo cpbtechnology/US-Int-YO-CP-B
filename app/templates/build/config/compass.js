@@ -7,6 +7,7 @@
 module.exports = function(config) {
 
   return {
+
     dist: {
       options: {
         relativeAssets: true,
@@ -15,6 +16,7 @@ module.exports = function(config) {
         outputStyle: 'compressed'
       }
     }
+
   };
 
 };

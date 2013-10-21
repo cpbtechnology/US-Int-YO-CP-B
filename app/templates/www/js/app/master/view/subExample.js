@@ -1,38 +1,38 @@
 define('master/view/subExample', [
-	'lodash',
-	'backbone',
-	'swig',
-	'plugins/text!template/Example.html'
+  'lodash',
+  'backbone',
+  'swig',
+  'plugins/text!template/Example.html'
 ], function(_, Backbone, swig, ExampleTemplate) {
 
-	'use strict';
+  'use strict';
 
-	return Backbone.View.extend({
+  return Backbone.View.extend({
 
-		events: {},
+    events: {},
 
-		initialize: function( options ) {
+    initialize: function( options ) {
 
-			var view = this;
+      var view = this;
 
-			_.bindAll( this );
+      _.bindAll( this );
 
-			view.render();
+      view.render();
 
-			console.log('Backbone : Global : SubView : Initialized');
-		},
+      console.log('Backbone : Global : SubView : Initialized');
+    },
 
 
-		render: function() {
-			
-			var view = this;
+    render: function() {
 
-			view.exampleTemplate = swig.compile(ExampleTemplate);
-			view.$el.append(view.exampleTemplate({
-				url: 'https://github.com/cpbtechnology/US-boilerplate-backbonejs'
-			}));
-		}
+      var view = this;
 
-	});
+      view.exampleTemplate = swig.compile(ExampleTemplate);
+      view.$el.append(view.exampleTemplate({
+        url: 'https://github.com/cpbtechnology/US-boilerplate-backbonejs'
+      }));
+    }
+
+  });
 
 });

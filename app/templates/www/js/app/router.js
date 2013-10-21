@@ -1,24 +1,24 @@
 define('router', [
-	'backbone'
+  'backbone'
 ], function(Backbone) {
 
-	'use strict';
+  'use strict';
 
-	return Backbone.Router.extend({
+  return Backbone.Router.extend({
 
-		initialize: function() {
-			
-			console.log('Backbone : Global : AppRouter : Initialized');
-		},
+    initialize: function() {
 
-
-		routes: {
-			'': 'index'
-		},
+      console.log('Backbone : Global : AppRouter : Initialized');
+    },
 
 
-		index: function() {}
+    routes: {
+      '': 'index'
+    },
 
-	});
+
+    index: function() {}
+
+  });
 
 });

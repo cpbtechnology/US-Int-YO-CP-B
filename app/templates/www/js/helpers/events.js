@@ -1,4 +1,4 @@
-define([
+define('helpers/events', [
   'lodash',
   'backbone'
 ], function(_, Backbone) {

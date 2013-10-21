@@ -1,39 +1,39 @@
 define('master/view/example', [
-	'jquery',
-	'lodash',
-	'backbone',
-	'master/view/subExample'
+  'jquery',
+  'lodash',
+  'backbone',
+  'master/view/subExample'
 ], function($, _, Backbone, SubView) {
 
-	'use strict';
+  'use strict';
 
-	return Backbone.View.extend({
+  return Backbone.View.extend({
 
-		events: {},
+    events: {},
 
-		el: '#main',
+    el: '#main',
 
-		initialize: function(options) {
+    initialize: function(options) {
 
-			var view = this;
+      var view = this;
 
-			_.bindAll(this);
+      _.bindAll(this);
 
-			view.render();
+      view.render();
 
-			console.log('Backbone : Global : ExampleView : Initialized');
-		},
+      console.log('Backbone : Global : ExampleView : Initialized');
+    },
 
 
-		render: function() {
+    render: function() {
 
-			var view = this;
+      var view = this;
 
-			view.subview = new SubView({
-				el: '#content'
-			});
-		}
+      view.subview = new SubView({
+        el: '#content'
+      });
+    }
 
-	});
+  });
 
 });

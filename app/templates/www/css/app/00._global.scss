@@ -7,17 +7,6 @@
 @import "_vendor/_grid.generator.scss";
 
 
-/********************************************************** Font Sizes */
-
-$font-size-1: get-multiplier(40, $font-size-base) + em; // 40px
-$font-size-2: get-multiplier(32, $font-size-base) + em; // 32px
-$font-size-3: get-multiplier(24, $font-size-base) + em; // 24px
-$font-size-4: get-multiplier(18, $font-size-base) + em; // 18px
-$font-size-5: $font-size-base;                          // 16px
-$font-size-6: get-multiplier(14, $font-size-base) + em; // 14px
-$font-size-7: get-multiplier(11, $font-size-base) + em; // 11px
-
-
 /********************************************************** Viewport */
 
 @-webkit-viewport{width:device-width}

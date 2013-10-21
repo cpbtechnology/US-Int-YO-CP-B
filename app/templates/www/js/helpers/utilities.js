@@ -1,7 +1,7 @@
 define('helpers/utilities', [
   'jquery',
   'helpers/events'
-], function( $, Events ) {
+], function($, Events) {
 
   'use strict';
 

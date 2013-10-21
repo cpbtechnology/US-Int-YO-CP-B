@@ -11,11 +11,11 @@ define('master/view/subExample', [
 
     events: {},
 
-    initialize: function( options ) {
+    initialize: function(options) {
 
       var view = this;
 
-      _.bindAll( this );
+      _.bindAll(this);
 
       view.render();
 

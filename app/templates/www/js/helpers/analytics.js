@@ -116,7 +116,7 @@ define('helpers/analytics', [
         }
       }
 
-      window.twttr.events.bind('tweet', function( event ) {
+      window.twttr.events.bind('tweet', function(event) {
         if( event ) {
           var targetUrl;
           if( event.target && event.target.nodeName === 'IFRAME' ) {
@@ -139,7 +139,7 @@ define('helpers/analytics', [
      * @method Analytics.delegateEvents
      * @param map {Object} Delegate object
      */
-    delegateEvents: function (map) {
+    delegateEvents: function(map) {
 
       var events = [],
       event;

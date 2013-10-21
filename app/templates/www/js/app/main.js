@@ -1,21 +1,10 @@
 /**
  * @module main
  */
- 
-function() {
+
+( function() {
 
 	'use strict';
-
-	// Use Requirejs optimizer has() integration for custom builds.
-	// Polyfill has() when not provided via Requirejs optimizer.
-	var has;
-
-	has = has || function() {
-		return true;
-	};
-
-	// debugMode property provided by requirejs build task.
-	window.isDebugMode = (has('debugMode')) ? true : false;
 
 	require.config({
 
@@ -91,4 +80,4 @@ function() {
 		});
 	});
 	// end require['app']
-}();
+}() );

@@ -1,0 +1,12 @@
+# Ignore sass cache
+.sass-cache/
+
+# Ignore modules installed for grunt
+node_modules/
+npm-debug.log
+
+# Ignore generated files
+.DS_Store
+www/js/min
+www/css/min
+www/css/generated

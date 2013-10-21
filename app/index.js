@@ -124,6 +124,7 @@ CpbGenerator.prototype.app = function app() {
   this.template('_package.json', 'package.json');
   this.template('_config.json', 'config.json');
   this.template('_bower.json', 'bower.json');
+  this.template('_gitignore.json', '.gitignore');
 };
 
 CpbGenerator.prototype.projectfiles = function projectfiles() {

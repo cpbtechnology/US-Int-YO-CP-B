@@ -39,19 +39,21 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-beep');
 
 
   /**
    * Default task
    */
   grunt.registerTask('default', [
-    'compass',         // run compass to process scss
-    'concat:css',      // concatenate processed css
-    'cssmin',          // minify concatenated css
-    'clean:concatcss', // delete the concatenated css directory/file
-    'jshint',          // run jshint to lint js
-    'requirejs'        // run require to build and minify js
-  ]);
+                      'compass',         // run compass to process scss
+                      'concat:css',      // concatenate processed css
+                      'cssmin',          // minify concatenated css
+                      'clean:concatcss', // delete the concatenated css directory/file
+                      'jshint',          // run jshint to lint js
+                      'requirejs',       // run require to build and minify js
+                      'beep:error'       // beep on Error
+                    ]);
 
 
   /**

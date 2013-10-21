@@ -66,10 +66,10 @@ CpbGenerator.prototype.app = function app() {
   this.mkdir('www/js/helpers');
   this.mkdir('www/js/lib');
   this.mkdir('www/js/min');
-  this.mkdir('www/js/app/collection');
-  this.mkdir('www/js/app/model');
-  this.mkdir('www/js/app/template');
-  this.mkdir('www/js/app/view');
+  this.mkdir('www/js/app/master/collection');
+  this.mkdir('www/js/app/master/model');
+  this.mkdir('www/js/app/master/template');
+  this.mkdir('www/js/app/master/view');
   this.mkdir('www/css');
   this.mkdir('www/css/fonts');
   this.mkdir('www/css/min');
@@ -83,6 +83,7 @@ CpbGenerator.prototype.app = function app() {
   this.copy('build/config/clean.js', 'build/config/clean.js');
   this.copy('build/config/compass.js', 'build/config/compass.js');
   this.copy('build/config/imagemin.js', 'build/config/imagemin.js');
+  this.copy('build/config/cssmin.js', 'build/config/cssmin.js');
   this.copy('build/config/jshint.js', 'build/config/jshint.js');
   this.copy('build/config/requirejs.js', 'build/config/requirejs.js');
   this.copy('build/config/watch.js', 'build/config/watch.js');

@@ -1,7 +1,7 @@
 define('helpers/console', [
   'settings',
   'lodash'
-], function( settings, _ ) {
+], function(settings, _) {
 
   'use strict';
 
@@ -23,7 +23,7 @@ define('helpers/console', [
             // IE<10 does not extend native Object and Function types
             // therefore .apply does not work so instead we just execute the function
             // once for each argument
-            for ( var i = 0; i < arguments.length; i++ ) {
+            for( var i = 0; i < arguments.length; i++ ) {
               original[methodName](arguments[i]);
             }
           }

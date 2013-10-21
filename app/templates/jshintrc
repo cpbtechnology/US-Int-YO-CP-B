@@ -5,6 +5,7 @@
   "camelcase": true,
   "curly": true,
   "eqeqeq": true,
+  "es5": true,
   "immed": true,
   "indent": 4,
   "latedef": true,

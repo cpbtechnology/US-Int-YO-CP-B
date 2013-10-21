@@ -66,10 +66,10 @@ CpbGenerator.prototype.app = function app() {
   this.mkdir('www/js/helpers');
   this.mkdir('www/js/lib');
   this.mkdir('www/js/min');
-  this.mkdir('www/js/app/collection');
-  this.mkdir('www/js/app/model');
-  this.mkdir('www/js/app/template');
-  this.mkdir('www/js/app/view');
+  this.mkdir('www/js/app/master/collection');
+  this.mkdir('www/js/app/master/model');
+  this.mkdir('www/js/app/master/template');
+  this.mkdir('www/js/app/master/view');
   this.mkdir('www/css');
   this.mkdir('www/css/fonts');
   this.mkdir('www/css/min');

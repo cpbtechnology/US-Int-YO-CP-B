@@ -1,8 +1,8 @@
 /**
  * @module main
  */
- 
-function() {
+
+( function() {
 
 	'use strict';
 
@@ -80,4 +80,4 @@ function() {
 		});
 	});
 	// end require['app']
-}();
+}() );

@@ -129,5 +129,4 @@ CpbGenerator.prototype.projectfiles = function projectfiles() {
   // move files within the user's root directory
   this.copy('bowerrc', '.bowerrc');
   this.copy('editorconfig', '.editorconfig');
-  this.copy('jshintrc', '.jshintrc');
 };

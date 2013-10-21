@@ -8,11 +8,13 @@ module.exports = function(config) {
 
   return {
 
-    files: [config.javascripts +'/app/**/*.js'],
-
-    exclude: [config.javascripts +'/lib/*.js'],
+    files: [config.javascripts + '/app/**/*.js'],
 
     options: {
+      ignores: [
+        config.javascripts + '/lib/*.js',
+        config.javascripts + '/min/*.js'
+      ],
       node: true,
       jquery: true,
       browser: true,

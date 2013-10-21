@@ -8,11 +8,15 @@ module.exports = function(config) {
 
   return {
 
+    options: {
+      report: 'min',
+    },
+
     minify: {
       expand: true,
-      cwd: config.cssbin,
+      cwd: config.stylesheets +'/concat/',
       src: ['**/*.css'],
-      dest: config.cssmin,
+      dest: config.cssmin +'/',
       ext: '.min.css'
     }
 

@@ -21,6 +21,7 @@ module.exports = function(grunt) {
 
     clean:     require('./build/config/clean.js')(config),
     watch:     require('./build/config/watch.js')(config),
+    concat:    require('./build/config/concat.js')(config),
     imagemin:  require('./build/config/imagemin.js')(config),
     compass:   require('./build/config/compass.js')(config),
     cssmin:    require('./build/config/cssmin.js')(config),
@@ -32,6 +33,7 @@ module.exports = function(grunt) {
   // Load grunt plugins
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -41,10 +43,15 @@ module.exports = function(grunt) {
 
   /**
    * Default task
-   *
-   * Process Sass, lint js, require js build
    */
-  grunt.registerTask('default', ['compass', 'cssmin', 'jshint', 'requirejs']);
+  grunt.registerTask('default', [
+    'compass',         // run compass to process scss
+    'concat:css',      // concatenate processed css
+    'cssmin',          // minify concatenated css
+    'clean:concatcss', // delete the concatenated css directory/file
+    'jshint',          // run jshint to lint js
+    'requirejs'        // run require to build and minify js
+  ]);
 
 
   /**

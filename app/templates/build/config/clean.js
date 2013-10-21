@@ -10,6 +10,10 @@ module.exports = function(config) {
 
     build: {
       src: [config.cssmin, config.cssbin, config.jsmin]
+    },
+
+    concatcss: {
+      src: [config.stylesheets +'/concat']
     }
 
   };

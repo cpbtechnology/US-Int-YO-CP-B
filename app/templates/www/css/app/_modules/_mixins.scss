@@ -1,6 +1,8 @@
 // _mixins.scss
 //   and functions
 
+@import "_modules/_variables.scss";
+
 
 // mq()
 //   Media Queries
@@ -98,7 +100,6 @@
 }
 
 
-
 // Headings
 //               font-size : line-height
 @mixin heading-1() { // 40 : 42
@@ -123,7 +124,7 @@
 
 @mixin heading-5() { // 16 : 24
   font-size: $font-size-base; // $font-size-5
-  line-height: get-multiplier(24, $font-size-5);
+  line-height: get-multiplier(24, $font-size-base);
 }
 
 @mixin heading-6() { // 14 : 18

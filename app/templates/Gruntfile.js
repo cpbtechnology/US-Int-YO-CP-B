@@ -37,14 +37,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-beep');
 
 
   /**
    * Default task
    *
    * Process Sass, lint js, require js build
+   * Beep will happen on Error
    */
-  grunt.registerTask('default', ['compass', 'cssmin', 'jshint', 'requirejs']);
+  grunt.registerTask('default', ['compass', 'cssmin', 'jshint', 'requirejs', 'beep:error']);
 
 
   /**

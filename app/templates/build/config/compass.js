@@ -11,8 +11,7 @@ module.exports = function(config) {
       options: {
         relativeAssets: true,
         sassDir: config.stylesheets +'/app',
-        cssDir: config.cssbin,
-        outputStyle: 'compressed'
+        cssDir: config.cssbin
       }
     }
   };

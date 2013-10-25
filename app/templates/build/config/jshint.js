@@ -18,7 +18,7 @@ module.exports = function(config) {
       node: true,
       jquery: true,
       browser: true,
-      es5: true,
+      es5: false,
       boss: true,
       curly: true,
       expr: true,

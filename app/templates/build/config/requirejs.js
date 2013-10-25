@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     'global': {
       'options': {
-        'name': 'app/main',
+        'name': 'main',
         'baseUrl': config.javascripts +'/app/',
         'mainConfigFile': config.javascripts +'/app/main.js',
 

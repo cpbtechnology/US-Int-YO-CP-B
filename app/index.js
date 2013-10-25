@@ -37,7 +37,7 @@ CpbGenerator.prototype.askFor = function askFor() {
   var prompts = [{
     name: 'siteName',
     message: 'What do you want to call this project?',
-    default: 'CP+B Boilderplate'
+    default: 'CPB-Boilerplate'
   }];
 
   yo.prompt(prompts, function (props) {
@@ -67,8 +67,8 @@ CpbGenerator.prototype.buildModules = function buildModules() {
   // setup Promps to Determine if the User wants something in the Boilerplate
   var modules = JSON.parse(yo.read('modules.json')).modules,
       modeulesLength = modules.length;
-  
-  if( modeulesLength > 0 ){
+
+  if( modeulesLength > 0 ){ //check if we need to display a list of modules to choose from
     var prompts = [{
       type: 'checkbox',
       name: 'siteModules',
@@ -77,12 +77,16 @@ CpbGenerator.prototype.buildModules = function buildModules() {
     }];
 
     yo.prompt(prompts, function (props) {
-      // loop through props
-      this.siteModules = props.siteModules;
+      if( props.siteModules.length > 0 ) { // check if the user has selected a module
+        this.siteModules = props.siteModules;
+      } else {
+        this.siteModules = undefined;
+      }
       cb();
     }.bind(this));
-  } else {
+  } else { //no modules to display
     this.siteModules = undefined;
+
     cb();
   }
 };
@@ -102,6 +106,7 @@ CpbGenerator.prototype.app = function app() {
   yo.mkdir('source/js/app');
   yo.mkdir('source/js/helpers');
   yo.mkdir('source/js/lib');
+  yo.mkdir('source/js/modules');
   yo.mkdir('source/js/min');
   yo.mkdir('source/js/app/master/collection');
   yo.mkdir('source/js/app/master/model');

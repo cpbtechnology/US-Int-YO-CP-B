@@ -10,7 +10,7 @@
     // Disable timeout for scripts.
     waitSeconds: 0,
 
-    baseUrl: 'javascripts',
+    baseUrl: 'js/app',
 
     paths: {
 

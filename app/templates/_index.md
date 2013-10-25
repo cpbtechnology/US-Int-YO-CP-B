@@ -23,14 +23,14 @@
     <link rel="shortcut icon" href="images/favicon.png" />
 
     <!-- BEGIN:PROD
-    <link rel="stylesheet" href="stylesheets/generated/app.min.css" />
+    <link rel="stylesheet" href="css/min/app.min.css" />
     END:PROD -->
 
     <!-- BEGIN:DEV -->
-    <link rel="stylesheet" href="stylesheets/generated/app.css" />
+    <link rel="stylesheet" href="css/min/app.min.css" />
     <!-- END:DEV -->
 
-    <!--[if IE 8]><script src="javascripts/lib/modernizr-2.6.2.min.js"></script><![endif]-->
+    <!--[if IE 8]><script src="js/lib/modernizr-2.6.2.min.js"></script><![endif]-->
   </head>
   <body>
 
@@ -51,17 +51,17 @@
     <!-- END: section-main -->
 
     <!-- BEGIN:PROD
-    <script src="javascripts/lib/require.js" data-main="javascripts/generated/app.min"></script>
+    <script src="js/lib/require.js" data-main="js/min/app.min"></script>
     END:PROD -->
 
     <!-- BEGIN:DEV -->
-    <script src="javascripts/lib/require.js" data-main="javascripts/app/main"></script>
+    <script src="js/lib/require.js" data-main="js/app/main"></script>
     <script>
       define('settings', {
         "gaAccountId": "GA_ACCOUNT_ID_HERE",
         "fbAccountId": "FB_ACCOUNT_ID_HERE",
         "env": "development",
-        "debug": true 		// set to false (or remove "debug" key altogether) to disable logging
+        "debug": true // set to false (or remove "debug" key altogether) to disable logging
       });
     </script>
     <!-- END:DEV -->

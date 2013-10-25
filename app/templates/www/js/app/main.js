@@ -33,6 +33,7 @@
       helpers: '../helpers',
 
       // 3rd party
+      facebook: '//connect.facebook.net/en_US/all',
       'google-analytics': '//google-analytics.com/ga'
     },
 
@@ -55,6 +56,10 @@
       swig: {
         deps: ['lodash'],
         exports: 'swig'
+      },
+
+      facebook: {
+        exports: 'FB'
       }
 
     }
@@ -64,7 +69,14 @@
 
     App.initialize();
 
-    require(['google-analytics','helpers/analytics'], function(ga, Analytics) {
+    require(['google-analytics','helpers/analytics', 'facebook'], function(ga, Analytics, Facebook) {
+
+      FB.init({
+        'appId': App.config.fbAccountId,
+        'xfbml': true
+      });
+
+      Analytics.socialTrackFacebook();
     });
   });
   // end require['app']

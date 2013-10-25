@@ -2,7 +2,7 @@ define('master/view/subExample', [
   'lodash',
   'backbone',
   'swig',
-  'plugins/text!template/Example.html'
+  'text!master/template/Example.html'
 ], function(_, Backbone, swig, ExampleTemplate) {
 
   'use strict';

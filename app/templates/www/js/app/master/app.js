@@ -8,16 +8,15 @@ define('master/app', [
   'helpers/console',
   'helpers/events',
   'helpers/analytics',
-  'model/AppConfig',
-  'router/AppRouter',
-  'view/ExampleView'
-], function(settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppConfig, AppRouter, ExampleView) {
+  'router',
+  'master/view/example'
+], function(settings, $, _, Modernizr, Backbone, Swig, console, Events, Analytics, AppRouter, ExampleView) {
 
   'use strict';
 
   var App = {
 
-    config: new AppConfig(settings),
+    config: settings,
 
     cache: {
       routers: {},

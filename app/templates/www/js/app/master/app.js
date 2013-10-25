@@ -33,7 +33,7 @@ define('master/app', [
     initialize: function() {
 
       Analytics.initialize({
-        gaAccountId: App.config.get('gaAccountId'),
+        gaAccountId: App.config.gaAccountId,
         trackingMap: App.trackingMap
       }).pageTrack('/index');
 

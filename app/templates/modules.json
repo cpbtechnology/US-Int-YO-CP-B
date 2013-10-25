@@ -1,22 +1,5 @@
 {
   "name": "cpb-modules",
   "description": "A List of Approved CP+B Modules",
-  "modules": [
-    {
-      "name": "Ski Free",
-      "value": "tsvensen@equalize.js"
-    },
-    {
-      "name": "this is a name1",
-      "value": "https://github.com/ratherironic/HTML5-SkiFree22222"
-    },
-    {
-      "name": "this is a name2",
-      "value": "https://github.com/ratherironic/HTML5-SkiFree3333333"
-    },
-    {
-      "name": "this is a name3",
-      "value": "https://github.com/ratherironic/HTML5-SkiFree444444"
-    }
-  ]
+  "modules": []
 }

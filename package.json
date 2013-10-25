@@ -1,6 +1,6 @@
 {
   "name": "generator-cpb",
-  "version": "0.1.26",
+  "version": "0.1.27",
   "description": "A Boilerplate Generator for Yeoman",
   "keywords": [
     "yeoman-generator"

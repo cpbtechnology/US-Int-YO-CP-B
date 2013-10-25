@@ -7,6 +7,6 @@ npm-debug.log
 
 # Ignore generated files
 .DS_Store
-www/js/min
-www/css/min
-www/css/generated
+source/js/min
+source/css/min
+source/css/generated

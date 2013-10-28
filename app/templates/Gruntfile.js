@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 
   var config = {};
 
-  config.root = 'www';
+  config.root = 'source';
   config.stylesheets = config.root + '/css';
   config.javascripts = config.root + '/js';
   config.jsmin  = config.javascripts + '/min';

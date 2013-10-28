@@ -32,6 +32,9 @@
       // Helper Modules
       helpers: '../helpers',
 
+      // Modules
+      modules: '../modules',
+
       // 3rd party
       facebook: '//connect.facebook.net/en_US/all',
       'google-analytics': '//google-analytics.com/ga'

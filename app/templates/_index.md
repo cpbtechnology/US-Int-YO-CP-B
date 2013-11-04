@@ -36,9 +36,9 @@
 
     <!-- BEGIN: section-main -->
     <div id="main">
-      <noscript>
-        <p>Javascript is currently disabled. Please <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">enable javascript</a> for the optimal experience!</p>
-      </noscript>
+      <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
       <header></header>
 

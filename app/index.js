@@ -48,27 +48,13 @@ CpbGenerator.prototype.askFor = function askFor() {
 
 CpbGenerator.prototype.buildModules = function buildModules() {
   var yo = this,
-      cb = this.async(); // creates an instance for Async functions
-
-  /**
-  * Example Module in Modules.json 
-  * {
-  *  "name": "cpb-modules",
-  *  "description": "A List of Approved CP+B Modules",
-  *  "modules": [
-  *    {
-  *      "name": "Ski Free",
-  *      "value": "tsvensen@equalize.js"
-  *    }
-  *  ]
-  * }
-  */
+      cb = this.async(),
+      modules = JSON.parse(yo.read('modules.json')).modules,
+      modulesLength = modules.length;; // creates an instance for Async functions
 
   // setup Promps to Determine if the User wants something in the Boilerplate
-  var modules = JSON.parse(yo.read('modules.json')).modules,
-      modeulesLength = modules.length;
 
-  if( modeulesLength > 0 ){ //check if we need to display a list of modules to choose from
+  if( modulesLength > 0 ){ //check if we need to display a list of modules to choose from
     var prompts = [{
       type: 'checkbox',
       name: 'siteModules',
@@ -180,10 +166,36 @@ CpbGenerator.prototype.app = function app() {
             return done(err);
           }
 
-          var moduleJSON = JSON.parse(yo.readFileAsString(remote.cachePath +'/package.json')); //grab module package json
+          //load in data from the selected modules.
+          var modules = JSON.parse(yo.read('modules.json')).modules;
 
-          for( var j = 0; j < moduleJSON['cpb-module'].length; j++ ) {
-            yo.copy(remote.cachePath + '/' + moduleJSON['cpb-module'][j].module, moduleJSON['cpb-module'][j].cpb); // move files based on data within the package json
+          /* Example of Module Info:
+           * {
+           * "name": "My First CP+B Module",
+           *  "value": "ratherironic@My-First-CPB-Module",
+           *  "cpb-module": [
+           *    {
+           *      "module": "source/my-first-module.html",
+           *      "cpb": "source/my-first-module.html" 
+           *    }, {
+           *      "module": "source/css/app/02.widgets.myFirstModule.scss",
+           *      "cpb": "source/css/app/02.widgets.myFirstModule.scss" 
+           *    }
+           *  ]
+           * }
+           */
+
+          for( var j = 0; j < modules.length; j++ ) {
+            if( modules[j]['value'] === yo.siteModules[0] ) {
+              for(var l = 0; l < modules[j]['cpb-module'].length; l++ ) {
+                console.log(modules[j]['cpb-module']);
+                console.log(modules[j]['cpb-module'][l]);
+                yo.copy(remote.cachePath + '/' + modules[j]['cpb-module'][l].module, modules[j]['cpb-module'][l].cpb); // move files based on data within the package json
+
+              }
+
+            }
+
           }
 
           done();

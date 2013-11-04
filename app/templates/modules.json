@@ -1,10 +1,5 @@
 {
   "name": "cpb-modules",
   "description": "A List of Approved CP+B Modules",
-  "modules": [
-    {
-      "name": "My First CP+B Module",
-      "value": "ratherironic@My-First-CPB-Module"
-    }
-  ]
+  "modules": []
 }

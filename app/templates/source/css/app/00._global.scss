@@ -65,18 +65,18 @@ html {
 img { max-width: 100%; }
 
 a {
-  color: $color-link;
+  color: $brand-pink;
   text-decoration: none;
   transition: all 0.4s ease-out;
 
-  &:link    { color: $color-link; }
-  &:visited { color: $color-link; }
+  &:link    { color: $brand-pink; }
+  &:visited { color: $brand-pink; }
 
   &:hover {
-    color: darken($color-link, 10%);
+    color: darken($brand-pink, 10%);
     text-decoration: underline;
   }
 
   &.active,
-  &:active { color: darken($color-link, 10%); }
+  &:active { color: darken($brand-pink, 10%); }
 }

@@ -158,10 +158,9 @@ CpbGenerator.prototype.app = function app() {
     for( var i = 0; i < yo.siteModules.length; i++ ) {
       user = yo.siteModules[i].split('@')[0]; // grab the user the repo
       repoName = yo.siteModules[i].split('@')[1]; // grab the name of the repo we want
-      
-      (function(k) {
-        yo.remote(user, repoName, function(err, remote) { // pull in the data from the repo, stored in .cache
 
+      (function(k) {
+        yo.remote( user, repoName, 'master', true, function(err, remote) { // pull in the data from the repo, stored in .cache
           if(err) { //error if it broke
             return done(err);
           }
@@ -188,8 +187,6 @@ CpbGenerator.prototype.app = function app() {
           for( var j = 0; j < modules.length; j++ ) {
             if( modules[j]['value'] === yo.siteModules[0] ) {
               for(var l = 0; l < modules[j]['cpb-module'].length; l++ ) {
-                console.log(modules[j]['cpb-module']);
-                console.log(modules[j]['cpb-module'][l]);
                 yo.copy(remote.cachePath + '/' + modules[j]['cpb-module'][l].module, modules[j]['cpb-module'][l].cpb); // move files based on data within the package json
 
               }
@@ -200,8 +197,7 @@ CpbGenerator.prototype.app = function app() {
 
           done();
 
-       })
-
+       });
       })(i);
 
     }

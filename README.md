@@ -5,7 +5,7 @@ A CP+B Boilerplate generator built on [Yeoman](http://yeoman.io).
 ## Deploy Dependancies
 - Ruby
 - GruntCLI
-- NPM
+- Node.js | NPM
 - Compass
 
 ## Steps for Updating (until this becomes automated)

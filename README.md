@@ -2,6 +2,11 @@
 
 A CP+B Boilerplate generator built on [Yeoman](http://yeoman.io).
 
+## Deploy Dependancies
+- Ruby
+- GruntCLI
+- Compass
+
 ## Steps for Updating (until this becomes automated)
 Updating the boilerplate requires you first install the Yeoman Generator repo from and link it on NPM. You're smart though, you can handle it.
 

@@ -5,10 +5,12 @@
 <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <title><%= siteName %></title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:site_name" content="" />
     <meta property="og:title" content="" />
@@ -17,8 +19,6 @@
     <meta property="og:image" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-
-    <title><%= siteName %></title>
 
     <link rel="shortcut icon" href="images/favicon.png" />
 
@@ -36,9 +36,9 @@
 
     <!-- BEGIN: section-main -->
     <div id="main">
-      <noscript>
-        <p>Javascript is currently disabled. Please <a href="http://www.google.com/support/bin/answer.py?answer=23852" target="_blank">enable javascript</a> for the optimal experience!</p>
-      </noscript>
+      <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
       <header></header>
 

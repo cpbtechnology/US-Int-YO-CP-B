@@ -107,7 +107,7 @@ $font-size-1: get-multiplier(40, $font-size-base) + 0em; // 40px
 $font-size-2: get-multiplier(32, $font-size-base) + 0em; // 32px
 $font-size-3: get-multiplier(24, $font-size-base) + 0em; // 24px
 $font-size-4: get-multiplier(18, $font-size-base) + 0em; // 18px
-$font-size-5: $font-size-base;                          // 16px
+$font-size-5: $font-size-base;                           // 16px
 $font-size-6: get-multiplier(14, $font-size-base) + 0em; // 14px
 $font-size-7: get-multiplier(11, $font-size-base) + 0em; // 11px
 
@@ -125,12 +125,12 @@ $font-size-7: get-multiplier(11, $font-size-base) + 0em; // 11px
   line-height: get-multiplier(36, $font-size-2);
 }
 
-@mixin heading-3() { // 32 : 36
+@mixin heading-3() { // 24 : 36
   font-size: $font-size-3;
   line-height: get-multiplier(30, $font-size-3);
 }
 
-@mixin heading-4() { // 32 : 36
+@mixin heading-4() { // 18 : 36
   font-size: $font-size-4;
   line-height: get-multiplier(24, $font-size-4);
 }

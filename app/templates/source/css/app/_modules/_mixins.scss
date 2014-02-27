@@ -1,9 +1,7 @@
 // _mixins.scss
 //   and functions
 //   and $font-size-* variables
-
 @import "_modules/_variables.scss";
-
 
 // mq()
 //   Media Queries
@@ -12,7 +10,6 @@
 @mixin mq($media-query) {
   @media ($media-query) { @content; }
 }
-
 
 // fixed-ratio()
 //   Calculate fixed ratio based on two dimensions (width/height)
@@ -25,12 +22,10 @@
   $slope: $height / $width;
 
   padding-top: percentage($slope);
-
   background-size: cover;
   -moz-background-size: cover;  /* Firefox 3.6 */
   background-position: center;  /* Internet Explorer 7/8 */
 }
-
 
 // fluid-ratio()
 //   Calculate fluid ratio based on two dimensions (width/height)
@@ -47,12 +42,10 @@
 
   padding-top: percentage($slope);
   height: $height;
-
   background-size: cover;
   -moz-background-size: cover;  /* Firefox 3.6 */
   background-position: center;  /* Internet Explorer 7/8 */
 }
-
 
 // color-each-pseudo-element-link()
 //   Add color for each link pseudo element
@@ -66,7 +59,6 @@
   &:active  { color: $active; }
 }
 
-
 // image-replacement()
 //   Add image replacement technique
 //     http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
@@ -78,7 +70,6 @@
   white-space: nowrap;
 }
 
-
 // strip-units()
 //   Remove units from a Sass value with units (em, px, etc.)
 //     http://stackoverflow.com/questions/12328259/how-do-you-strip-the-unit-from-any-number-in-sass#answer-12335841
@@ -87,7 +78,6 @@
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
-
 
 // get-multiplier()
 //   Get the multiplier for the pixel value divided by the current/contextual font size
@@ -100,7 +90,6 @@
   //                        = .625
 }
 
-
 // Font Size Variables
 //   Dependant on get-multiplier()
 $font-size-1: get-multiplier(40, $font-size-base) + 0em; // 40px
@@ -110,7 +99,6 @@ $font-size-4: get-multiplier(18, $font-size-base) + 0em; // 18px
 $font-size-5: $font-size-base;                          // 16px
 $font-size-6: get-multiplier(14, $font-size-base) + 0em; // 14px
 $font-size-7: get-multiplier(11, $font-size-base) + 0em; // 11px
-
 
 // Headings
 //   Dependant on $font-size-* variables

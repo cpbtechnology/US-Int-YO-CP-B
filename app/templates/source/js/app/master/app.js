@@ -25,7 +25,6 @@ define('master/app', [
       views: {}
     },
 
-
     /**
      * Initialize Application. Responsible for instantiating Backbone router and starting Backbone history.
      * @method App.initialize
@@ -39,9 +38,11 @@ define('master/app', [
 
       App.bindCustomEvents();
 
+      // creating a new instance of the Backbone.JS Router
       App.cache.routers.appRouter = new AppRouter();
       Backbone.history.start();
-
+      
+      // creating a new instance of an Example View
       App.cache.views.exampleView = new ExampleView();
 
       console.log('App : Initialized');
@@ -56,6 +57,7 @@ define('master/app', [
      */
     bindCustomEvents: function() {
 
+      // listen to the event of 'trackPage' in the application, fire function on trigger
       Events.bind('trackPage', function(pageName) {
         Analytics.pageTrack(pageName);
       });
@@ -67,6 +69,7 @@ define('master/app', [
     trackingMap: {
       click: {
         'section-main': function(e) {
+          // when tracking event has fired, call the appropriate tracking method in the Analytics Helper
           Analytics.customEventTrack(['param1', 'param2', 'param3']);
         }
       }

@@ -50,7 +50,6 @@ define('master/app', [
       return App; // do not use "this" in a static context
     },
 
-
     /**
      * Use this function to bind tracking against any custom event triggered against the app.events dispatch.
      * @method App.bindCustomEvents
@@ -61,9 +60,8 @@ define('master/app', [
       Events.bind('trackPage', function(pageName) {
         Analytics.pageTrack(pageName);
       });
-
+      
       console.log('App : Custom Events Binding Complete');
-      return App;
     },
 
     trackingMap: {

@@ -9,9 +9,10 @@ define('helpers/console', [
    * Normalize the console for older browsers
    * only output if settings.debug is set to true
    */
+
   var original = window.console,
-  console  = window.console = {},
-  methods = ['assert', 'count', 'debug', 'dir', 'dirxml', 'error', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'trace', 'warn'];
+      console  = window.console = {},
+      methods = ['assert', 'count', 'debug', 'dir', 'dirxml', 'error', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd', 'trace', 'warn'];
 
   _.each(methods, function(methodName) {
     if( settings.debug === true ) {
@@ -34,7 +35,7 @@ define('helpers/console', [
     }
   });
 
-  if ( settings.debug===true ) {
+  if ( settings.debug === true ) {
     console.warn('DEBUG IS ON');
   }
 

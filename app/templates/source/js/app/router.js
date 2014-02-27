@@ -11,13 +11,13 @@ define('router', [
       console.log('Backbone : Global : AppRouter : Initialized');
     },
 
-
     routes: {
       '': 'index'
     },
 
-
-    index: function() {}
+    index: function() {
+      
+    }
 
   });
 

@@ -15,7 +15,6 @@
   See examples-grid.scss for usage.
 */
 
-
 //* helper mixin */
 @mixin reverseBoxSizing() {
   width: auto;
@@ -110,10 +109,8 @@
       margin: 0 (-$padOuter); 
       @include reverseBoxSizing();
     }
-
   }
 }
-
 
 //* generate grid classes for each breakpoint, defaults defined below */
 @mixin gridGenerator(
@@ -127,7 +124,6 @@
 
   //* generate top-level grid classes, no prefix */
   @include gridClasses('', $gridColumns, $padInner, $padOuter);
-
 
   @for $i from 1 through length($breakpointPrefixes) {
     $prefix: nth($breakpointPrefixes, $i);

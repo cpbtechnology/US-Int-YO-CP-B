@@ -1,11 +1,8 @@
 // 00.global.scss
-
 @import "_modules/_variables.scss";
 @import "_modules/_mixins.scss";
-
 @import "_vendor/_normalize.scss";
 @import "_vendor/_grid.generator.scss";
-
 
 /********************************************************** Viewport */
 
@@ -14,7 +11,6 @@
     @-ms-viewport{width:device-width}
      @-o-viewport{width:device-width}
         @viewport{width:device-width}
-
 
 /********************************************************** Grid */
 
@@ -35,7 +31,6 @@
   margin: 0 auto;
 }
 
-
 /********************************************************** Box Sizing *
   Box Sizing
   Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/
@@ -43,7 +38,6 @@
 */
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  *behavior: url(boxsizing.htc); }
-
 
 /********************************************************** General */
 

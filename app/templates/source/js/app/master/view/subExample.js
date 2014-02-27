@@ -27,7 +27,10 @@ define('master/view/subExample', [
 
       var view = this;
 
+      // create instance of the example template
       view.exampleTemplate = swig.compile(ExampleTemplate);
+
+      // append the exmaple template, pass url parameter to populate the template
       view.$el.append(view.exampleTemplate({
         url: 'https://github.com/cpbtechnology/US-boilerplate-backbonejs'
       }));

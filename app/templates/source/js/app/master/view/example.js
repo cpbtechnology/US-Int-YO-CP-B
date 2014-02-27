@@ -29,9 +29,11 @@ define('master/view/example', [
 
       var view = this;
 
+      /*
+      Creating an instance of an example SubView
       view.subview = new SubView({
         el: '#content'
-      });
+      });*/
     }
 
   });

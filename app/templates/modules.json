@@ -1,5 +1,19 @@
 {
   "name": "cpb-modules",
   "description": "A List of Approved CP+B Modules",
-  "modules": []
+  "modules": [
+    {
+      "name": "My First CP+B Module",
+       "value": "ratherironic@My-First-CPB-Module",
+       "cpb-module": [
+         {
+           "module": "source/my-first-module.html",
+           "cpb": "source/my-first-module.html" 
+         }, {
+           "module": "source/css/app/02.widgets.myFirstModule.scss",
+           "cpb": "source/css/app/02.widgets.myFirstModule.scss" 
+         }
+       ]
+   }
+  ]
 }

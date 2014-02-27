@@ -27,7 +27,6 @@ module.exports = function(grunt) {
     cssmin:    require('./build/config/cssmin.js')(config),
     jshint:    require('./build/config/jshint.js')(config),
     requirejs: require('./build/config/requirejs.js')(config)
-
   });
 
   // Load grunt plugins

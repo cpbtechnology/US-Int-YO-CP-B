@@ -26,11 +26,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // tag and class
-h1, .heading-1 { @include heading-1(); } 
-h2, .heading-2 { @include heading-2(); } 
-h3, .heading-3 { @include heading-3(); } 
-h4, .heading-4 { @include heading-4(); } 
-h5, .heading-5 { @include heading-5(); } 
+h1, .heading-1 { @include heading-1(); }
+h2, .heading-2 { @include heading-2(); }
+h3, .heading-3 { @include heading-3(); }
+h4, .heading-4 { @include heading-4(); }
+h5, .heading-5 { @include heading-5(); }
 h6, .heading-6 { @include heading-6(); }
 
 p {

@@ -15,7 +15,7 @@
 /********************************************************** Typography */
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: $fonts;
   color: $color-text;
 
                     font-size: $font-size-base; // 16px
@@ -25,7 +25,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Helvetica, sans-serif;
+  font-family: $fonts;
   margin: 0;
   padding: 0;
 }

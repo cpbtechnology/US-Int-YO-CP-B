@@ -35,7 +35,7 @@ $color-link: $brand-pink;
 // Typography
 $vertical-rhythm-base: 16; // 16px default browser font size
 $vertical-rhythm: 24;      // 24px vertical rhythm
-
+$fonts: Helvetica, sans-serif;  // setting font family to a variable for mulitple use between files
 $font-size-base: 1em; // Use browser default font-size, usually 16px
 
 // font sizes defined in _mixins.scss

@@ -60,7 +60,7 @@ define('master/app', [
       Events.bind('trackPage', function(pageName) {
         Analytics.pageTrack(pageName);
       });
-      
+
       console.log('App : Custom Events Binding Complete');
     },
 
